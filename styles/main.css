@@ -79,12 +79,12 @@
 .buttons #btn19 {
   grid-area: 1/4/2/5;
 }
-.buttons .grey-buttons {
+.buttons .greyButtons {
   background-color: #313131;
   color: #fff;
   border-radius: 25%;
 }
-.buttons .orange-buttons {
+.buttons .orangeButtons {
   background-color: #f69906;
   color: #fff;
   border-radius: 25%;
