@@ -3,18 +3,23 @@
 .display {
     width: 100vw;
     height: 15vh;
+    
 }
 
 
 
-.buttons {   
+.buttons { 
+    
+    :active {
+    box-shadow: 0 0.75px #666;
+    transform: translateY(.5px);
+  }
   width: 100vw;
   height: 85vh;      
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+
 
   #btn1 {
     grid-area: 5 / 1 / 6 / 3;

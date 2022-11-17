@@ -17,8 +17,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+}
+.buttons :active {
+  box-shadow: 0 0.75px #666;
+  transform: translateY(0.5px);
 }
 .buttons #btn1 {
   grid-area: 5/1/6/3;
