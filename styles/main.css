@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+.display {
+  width: 100vw;
+  height: 15vh;
+}
+
+.buttons {
+  width: 100vw;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.buttons #btn1 {
+  grid-area: 5/1/6/3;
+}
+.buttons #btn2 {
+  grid-area: 5/3/6/4;
+}
+.buttons #btn3 {
+  grid-area: 5/4/6/5;
+}
+.buttons #btn4 {
+  grid-area: 4/1/5/2;
+}
+.buttons #btn5 {
+  grid-area: 4/2/5/3;
+}
+.buttons #btn6 {
+  grid-area: 4/3/5/4;
+}
+.buttons #btn7 {
+  grid-area: 4/4/5/5;
+}
+.buttons #btn8 {
+  grid-area: 3/1/4/2;
+}
+.buttons #btn9 {
+  grid-area: 3/2/4/3;
+}
+.buttons #btn10 {
+  grid-area: 3/3/4/4;
+}
+.buttons #btn11 {
+  grid-area: 3/4/4/5;
+}
+.buttons #btn12 {
+  grid-area: 2/1/3/2;
+}
+.buttons #btn13 {
+  grid-area: 2/2/3/3;
+}
+.buttons #btn14 {
+  grid-area: 2/3/3/4;
+}
+.buttons #btn15 {
+  grid-area: 2/4/3/5;
+}
+.buttons #btn16 {
+  grid-area: 1/1/2/2;
+}
+.buttons #btn17 {
+  grid-area: 1/2/2/3;
+}
+.buttons #btn18 {
+  grid-area: 1/3/2/4;
+}
+.buttons #btn19 {
+  grid-area: 1/4/2/5;
+}
+.buttons .grey-buttons {
+  background-color: #313131;
+  color: #fff;
+  border-radius: 25%;
+}
+.buttons .orange-buttons {
+  background-color: #f69906;
+  color: #fff;
+  border-radius: 25%;
+}/*# sourceMappingURL=main.css.map */
