@@ -4,11 +4,18 @@
   margin: 0;
   box-sizing: border-box;
   background-color: #000000;
+  color: #fff;
 }
 
 .display {
   width: 100vw;
   height: 15vh;
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+  border: 2px solid white;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 .buttons {
@@ -17,9 +24,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+.buttons :hover {
+  cursor: pointer;
+  opacity: 50%;
 }
 .buttons :active {
-  box-shadow: 0 0.75px #666;
+  box-shadow: 0 1.5px rgb(255, 255, 255);
   transform: translateY(0.5px);
 }
 .buttons #btn1 {
@@ -82,10 +95,12 @@
 .buttons .greyButtons {
   background-color: #313131;
   color: #fff;
+  font-size: 3.5rem;
   border-radius: 25%;
 }
 .buttons .orangeButtons {
   background-color: #f69906;
   color: #fff;
+  font-size: 3.5rem;
   border-radius: 25%;
 }/*# sourceMappingURL=main.css.map */
