@@ -29,6 +29,11 @@ operators.forEach((button) => {
   });
 });
 
+positiveNegative.addEventListener("click", () => {
+  // if num = 18 make -18
+  // else if num = -18  make 18
+});
+
 clear.addEventListener("click", () => {
   num1 = "";
   num2 = "";

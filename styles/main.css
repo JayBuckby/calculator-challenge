@@ -18,27 +18,6 @@
   align-items: flex-end;
 }
 
-.current {
-  width: 100vw;
-  height: 7.5vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.operation-display {
-  width: 100vw;
-  height: 7.5vh;
-  display: flex;
-  color: white;
-}
-
-.holding {
-  width: 100vw;
-  height: 7.5vh;
-  display: flex;
-}
-
 .buttons {
   width: 100vw;
   height: 85vh;
