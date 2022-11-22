@@ -4,11 +4,32 @@
   width: 100vw;
   height: 15vh;
   font-family: $text-primary;
-  font-size: 5rem;
-  border: 2px solid white;
+  font-size: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: end;
   align-items: flex-end;
+}
+
+.current {
+  width: 100vw;
+  height: 7.5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.operation-display {
+  width: 100vw;
+  height: 7.5vh;
+  display: flex;
+  color: white;
+}
+
+.holding {
+  width: 100vw;
+  height: 7.5vh;
+  display: flex;
 }
 
 .buttons {
