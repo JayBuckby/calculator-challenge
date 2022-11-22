@@ -12,14 +12,13 @@ let operator = "";
 numbers.forEach((button) => {
   button.addEventListener("click", () => {
     display.innerHTML += button.innerHTML;
+    if (operator == "") {
+      num1 += button.innerHTML;
+    } else {
+      num2 += button.innerHTML;
+    }
   });
-  if (operator == "") {
-    num1 += button.innerHTML;
-  } else {
-    num2 += button.innerHTML;
-  }
 });
-console.log(numbers);
 
 operators.forEach((button) => {
   button.addEventListener("click", (event) => {
@@ -30,8 +29,6 @@ operators.forEach((button) => {
   });
 });
 
-equals.addEventListener("click", () => handleSum);
-
 clear.addEventListener("click", () => {
   num1 = "";
   num2 = "";
@@ -41,22 +38,25 @@ clear.addEventListener("click", () => {
 
 const mathsEquation = (num1, num2, operator) => {
   let newNum1 = Number(num1);
-  console.log(newNum1);
   let newNum2 = Number(num2);
-  console.log(newNum2);
+  let result;
   if (operator === "+") {
-    return newNum1 + newNum2;
+    result = newNum1 + newNum2;
+    return result;
   } else if (operator === "-") {
-    return newNum1 - newNum2;
+    result = newNum1 - newNum2;
+    return result;
   } else if (operator === "÷") {
-    return newNum1 / newNum2;
+    result = newNum1 / newNum2;
+    return result;
   } else if (operator === "x") {
-    return newNum1 * newNum2;
+    result = newNum1 * newNum2;
+    return result;
   }
 };
 
 const handleSum = () => {
-  console.log(mathsEquation(num1, num2, operator));
+  display.innerHTML = mathsEquation(num1, num2, operator);
 };
 
 equals.addEventListener("click", handleSum);
