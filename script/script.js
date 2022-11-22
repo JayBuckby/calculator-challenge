@@ -19,36 +19,40 @@ numbers.forEach((button) => {
     num2 += button.innerHTML;
   }
 });
+console.log(numbers);
 
 operators.forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
     if (num1 != "") {
-      display.innerHTML += button.innerHTML;
+      operator = button.innerHTML;
     }
+    display.innerHTML += button.innerHTML;
   });
 });
 
+equals.addEventListener("click", () => handleSum);
+
 clear.addEventListener("click", () => {
+  num1 = "";
+  num2 = "";
+  operator = "";
   return (display.innerHTML = "");
 });
 
 const mathsEquation = (num1, num2, operator) => {
-  let newnum1 = Number(num1);
-  console.log(num1, newnum1);
-  let newnum2 = Number(num2);
-  console.log(num2, newnum2);
-
+  let newNum1 = Number(num1);
+  console.log(newNum1);
+  let newNum2 = Number(num2);
+  console.log(newNum2);
   if (operator === "+") {
-    return newnum1 + newnum2;
+    return newNum1 + newNum2;
   } else if (operator === "-") {
-    return newnum1 - newnum2;
+    return newNum1 - newNum2;
   } else if (operator === "÷") {
-    return newnum1 / newnum2;
+    return newNum1 / newNum2;
   } else if (operator === "x") {
-    return newnum1 * newnum2;
+    return newNum1 * newNum2;
   }
-
-  console.log(operator);
 };
 
 const handleSum = () => {
