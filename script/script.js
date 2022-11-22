@@ -4,6 +4,7 @@ const equals = document.querySelector(".equals");
 const clear = document.querySelector(".delete");
 const positiveNegative = document.querySelector(".postiveNegative");
 const display = document.querySelector(".display");
+const decimal = document.querySelector(".decimal");
 
 let num1 = "";
 let num2 = "";
@@ -28,6 +29,10 @@ operators.forEach((button) => {
     display.innerHTML += button.innerHTML;
   });
 });
+
+// decimal.addEventListener("click", () => {
+//   const PLACEHOLDER = button;
+// });
 
 // positiveNegative.addEventListener("click", () => {
 //   // if num = 18 make -18
@@ -65,3 +70,17 @@ const handleSum = () => {
 };
 
 equals.addEventListener("click", handleSum);
+
+// decimal.addEventListener("click", () => {
+//   const PLACEHOLDER = button;
+// });
+
+// positiveNegative.addEventListener("click", () => {
+//   // if num = 18 make -18
+//   // else if num = -18  make 18
+// });
+
+//   else if (operator === "%") {
+//       result = newNum1 % newNum2;
+//       return result;
+//     }
