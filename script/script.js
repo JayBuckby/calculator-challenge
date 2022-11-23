@@ -33,10 +33,10 @@ operators.forEach((button) => {
 // positiveNegative.addEventListener("click", (event) => {
 //   num1 = Number(display.innerHTML);
 //   if (display.innerHTML.includes("-")) {
-//     num1 = Math.abs(num1);
+//     num1 = Math.abs(number);
 //     display.innerHTML = num1;
 //   } else {
-//     num1 = -Math.abs(num1);
+//     num1 = -Math.abs(number);
 //     display.innerHTML = num1;
 //   }
 // });
@@ -45,10 +45,16 @@ operators.forEach((button) => {
 //   const PLACEHOLDER = button;
 // });
 
-// positiveNegative.addEventListener("click", () => {
-//   // if num = 18 make -18
-//   // else if num = -18  make 18
-// });
+decimal.addEventListener("click", () => {
+  if (num1.includes(".") && num2.includes(".")) {
+  } else if (num2 == "") {
+    display.innerHTML = `${display.innerHTML}` + ".";
+    num1 += ".";
+  } else {
+    display.innerHTML = `${display.innerHTML}` + ".";
+    num2 += ".";
+  }
+});
 
 clear.addEventListener("click", () => {
   num1 = "";
