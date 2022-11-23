@@ -9,18 +9,18 @@
 
 .display {
   width: 100vw;
-  height: 15vh;
+  height: 20vh;
   font-family: "Orbitron", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: flex-end;
 }
 
 .buttons {
   width: 100vw;
-  height: 85vh;
+  height: 79vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -32,7 +32,7 @@
   opacity: 50%;
 }
 .buttons :active {
-  box-shadow: 0 1.5px rgb(255, 255, 255);
+  box-shadow: 0 5.5px rgb(255, 255, 255);
   transform: translateY(0.5px);
 }
 .buttons #btn1 {
@@ -95,12 +95,14 @@
 .buttons .greyButtons {
   background-color: #313131;
   color: #fff;
+  border: 1px solid white;
   font-size: 3.5rem;
   border-radius: 25%;
 }
 .buttons .orangeButtons {
   background-color: #f69906;
   color: #fff;
+  border: 1px solid white;
   font-size: 3.5rem;
   border-radius: 25%;
 }/*# sourceMappingURL=main.css.map */

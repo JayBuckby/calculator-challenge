@@ -2,12 +2,12 @@
 
 .display {
   width: 100vw;
-  height: 15vh;
+  height: 20vh;
   font-family: $text-primary;
-  font-size: 3rem;
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -17,11 +17,11 @@
     opacity: 50%;
   }
   :active {
-    box-shadow: 0 1.5px rgb(255, 255, 255);
+    box-shadow: 0 5.5px rgb(255, 255, 255);
     transform: translateY(0.5px);
   }
   width: 100vw;
-  height: 85vh;
+  height: 79vh;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -89,12 +89,14 @@
   .greyButtons {
     background-color: $color-grey;
     color: $color-white;
+    border: 1px solid white;
     font-size: 3.5rem;
     border-radius: 25%;
   }
   .orangeButtons {
     background-color: $color-orange;
     color: $color-white;
+    border: 1px solid white;
     font-size: 3.5rem;
     border-radius: 25%;
   }
