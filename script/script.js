@@ -62,6 +62,9 @@ const mathsEquation = (num1, num2, operator) => {
   } else if (operator === "x") {
     result = newNum1 * newNum2;
     return result;
+  } else if (operator === "%") {
+    result = newNum1 / 100;
+    return result;
   }
 };
 
