@@ -2,13 +2,24 @@ const numbers = Array.from(document.querySelectorAll(".numbers"));
 const operators = Array.from(document.querySelectorAll(".operators"));
 const equals = document.querySelector(".equals");
 const clear = document.querySelector(".delete");
-const positiveNegative = document.querySelector(".postiveNegative");
+const positiveNegative = document.querySelector(".positiveNegative");
 const display = document.querySelector(".display");
 const decimal = document.querySelector(".decimal");
 
 let num1 = "";
 let num2 = "";
 let operator = "";
+
+positiveNegative.addEventListener("click", (event) => {
+  num1 = Number(display.innerHTML);
+  if (display.innerHTML.includes("-")) {
+    num1 = Math.abs(num1);
+    display.innerHTML = num1;
+  } else {
+    num1 = -Math.abs(num1);
+    display.innerHTML = num1;
+  }
+});
 
 numbers.forEach((button) => {
   button.addEventListener("click", () => {
@@ -30,24 +41,9 @@ operators.forEach((button) => {
   });
 });
 
-// positiveNegative.addEventListener("click", (event) => {
-//   num1 = Number(display.innerHTML);
-//   if (display.innerHTML.includes("-")) {
-//     num1 = Math.abs(number);
-//     display.innerHTML = num1;
-//   } else {
-//     num1 = -Math.abs(number);
-//     display.innerHTML = num1;
-//   }
-// });
-
-// decimal.addEventListener("click", () => {
-//   const PLACEHOLDER = button;
-// });
-
 decimal.addEventListener("click", () => {
   if (num1.includes(".") && num2.includes(".")) {
-  } else if (num2 == "") {
+  } else if (num2 === "") {
     display.innerHTML = `${display.innerHTML}` + ".";
     num1 += ".";
   } else {
@@ -85,9 +81,6 @@ const mathsEquation = (num1, num2, operator) => {
   }
 };
 
-//newResult = result + newNum1
-//return newResult
-
 const handleSum = () => {
   const answer = mathsEquation(num1, num2, operator);
   num1 = answer;
@@ -96,12 +89,3 @@ const handleSum = () => {
 };
 
 equals.addEventListener("click", handleSum);
-
-// decimal.addEventListener("click", () => {
-//   const PLACEHOLDER = button;
-// });
-
-//   else if (operator === "%") {
-//       result = newNum1 % newNum2;
-//       return result;
-//     }
