@@ -30,6 +30,17 @@ operators.forEach((button) => {
   });
 });
 
+// positiveNegative.addEventListener("click", (event) => {
+//   num1 = Number(display.innerHTML);
+//   if (display.innerHTML.includes("-")) {
+//     num1 = Math.abs(num1);
+//     display.innerHTML = num1;
+//   } else {
+//     num1 = -Math.abs(num1);
+//     display.innerHTML = num1;
+//   }
+// });
+
 // decimal.addEventListener("click", () => {
 //   const PLACEHOLDER = button;
 // });
@@ -68,19 +79,20 @@ const mathsEquation = (num1, num2, operator) => {
   }
 };
 
+//newResult = result + newNum1
+//return newResult
+
 const handleSum = () => {
-  display.innerHTML = mathsEquation(num1, num2, operator);
+  const answer = mathsEquation(num1, num2, operator);
+  num1 = answer;
+  num2 = "";
+  display.innerHTML = answer;
 };
 
 equals.addEventListener("click", handleSum);
 
 // decimal.addEventListener("click", () => {
 //   const PLACEHOLDER = button;
-// });
-
-// positiveNegative.addEventListener("click", () => {
-//   // if num = 18 make -18
-//   // else if num = -18  make 18
 // });
 
 //   else if (operator === "%") {
