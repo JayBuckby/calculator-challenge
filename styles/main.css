@@ -10,6 +10,7 @@
 .display {
   width: 100vw;
   height: 20vh;
+  border: 1px solid white;
   font-family: "Orbitron", sans-serif;
   font-size: 4rem;
   display: flex;
@@ -21,6 +22,7 @@
 .buttons {
   width: 100vw;
   height: 79vh;
+  border: 1px solid white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
