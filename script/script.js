@@ -13,7 +13,6 @@ let num2 = "";
 let operator = "";
 
 //Take our Array of numbers, loop through each of them individually and run a function so that when a number button is clicked, display that number on screen and assign it to the num1 variable, once num1 is assigned, move on to num2 and do the same. Little easter egg added.
-
 numbers.forEach((button) => {
   button.addEventListener("click", () => {
     display.innerHTML += button.innerHTML;
